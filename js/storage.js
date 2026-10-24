@@ -43,6 +43,7 @@ export const DEFAULT_TASKS = [
 
 /**
  * Validates a single task object against the expected schema.
+ * Tolerates missing createdAt by accepting optional timestamps.
  * @param {unknown} item
  * @returns {boolean}
  */
@@ -54,8 +55,7 @@ export function isValidTaskSchema(item) {
     candidate.id.trim().length > 0 &&
     typeof candidate.title === 'string' &&
     candidate.title.trim().length > 0 &&
-    typeof candidate.completed === 'boolean' &&
-    typeof candidate.createdAt === 'string'
+    typeof candidate.completed === 'boolean'
   );
 }
 
@@ -80,8 +80,13 @@ export function loadTasksFromStorage() {
       return { tasks: [], recovered: true, error: 'Data was not an array' };
     }
 
-    // Filter out corrupted task entries
-    const validTasks = parsed.filter(isValidTaskSchema);
+    // Filter out corrupted task entries and ensure valid timestamps
+    const validTasks = parsed
+      .filter(isValidTaskSchema)
+      .map(task => ({
+        ...task,
+        createdAt: typeof task.createdAt === 'string' ? task.createdAt : new Date().toISOString()
+      }));
     const recovered = validTasks.length !== parsed.length;
 
     if (recovered) {
