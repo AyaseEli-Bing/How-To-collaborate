@@ -1,6 +1,19 @@
 # DevBoard ⚡
 
-> A clean, developer-oriented task management web application designed as a practical learning project for **Git**, **GitHub**, branching workflows, Pull Requests, and collaborative code reviews.
+> A clean, developer-oriented task management web application designed as an interactive hands-on guide for learning **Git**, **GitHub collaboration**, branching workflows, Pull Requests, and code reviews.
+
+[![Live Demo](https://img.shields.io/badge/demo-live%20preview-2ea043?style=for-the-badge&logo=githubpages&logoColor=white)](https://tusharrr0302.github.io/How-To-collaborate/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)](CONTRIBUTING.md)
+[![Vanilla JS](https://img.shields.io/badge/vanilla-ES6%2B%20Modules-f7df1e?style=for-the-badge&logo=javascript&logoColor=black)](js/)
+[![Open Issues](https://img.shields.io/github/issues/tusharrr0302/How-To-collaborate?style=for-the-badge&color=2f81f7)](https://github.com/tusharrr0302/How-To-collaborate/issues)
+
+---
+
+## 🌐 Live Interactive Demo
+
+Experience DevBoard directly in your browser without any installation:  
+👉 **[Launch Live Demo](https://tusharrr0302.github.io/How-To-collaborate/)**
 
 ---
 
@@ -18,18 +31,13 @@
 
 ## 2. Screenshots
 
-<!-- 
-Screenshot Placeholders:
-Add high-resolution screenshots here after cloning and running the application in your local environment.
--->
-
 | Desktop Task Board View | Task Creation & Filter Interaction |
 | :---: | :---: |
-| ![DevBoard Desktop Interface](docs/screenshots/desktop-board-placeholder.png)<br>*(Placeholder: Main dashboard showing stats, task list, and developer sidebar)* | ![DevBoard Filter & Modals](docs/screenshots/filters-modal-placeholder.png)<br>*(Placeholder: Filter toolbar, search query, and edit modal)* |
+| ![DevBoard Desktop Interface](docs/screenshots/desktop-board.png)<br>*(Main dashboard showing stats, task list, and developer sidebar)* | ![DevBoard Filter & Modals](docs/screenshots/filters-modal.png)<br>*(Filter toolbar, search query, and edit modal)* |
 
 | Mobile Responsive View | Delete Confirmation Dialog |
 | :---: | :---: |
-| ![DevBoard Mobile View](docs/screenshots/mobile-view-placeholder.png)<br>*(Placeholder: Stacked mobile view with 44px tap targets)* | ![DevBoard Confirmation Dialog](docs/screenshots/delete-dialog-placeholder.png)<br>*(Placeholder: Accessible confirmation modal for task deletion)* |
+| ![DevBoard Mobile View](docs/screenshots/mobile-view.png)<br>*(Stacked mobile view with 44px tap targets)* | ![DevBoard Confirmation Dialog](docs/screenshots/delete-dialog.png)<br>*(Accessible confirmation modal for task deletion)* |
 
 ---
 
@@ -251,11 +259,15 @@ Before opening a Pull Request or tagging a release, run through this concise che
 ---
 
 ## 11. Contributing
-
-Contributions are warmly welcomed! Please read our [CONTRIBUTING.md](file:///Users/tusharrr0302/.gemini/antigravity-ide/scratch/devboard/CONTRIBUTING.md) for full instructions on forking, branching conventions, and Pull Request guidelines.
-
+ 
+Contributions are warmly welcomed! Please read our [CONTRIBUTING.md](CONTRIBUTING.md) for full instructions on forking, branching conventions, and Pull Request guidelines.
+ 
 ---
-
+ 
 ## 12. License
-
-*(License Placeholder: A formal open-source license such as MIT or Apache 2.0 will be selected upon release. Until then, all rights are reserved.)*
+ 
+Distributed under the **MIT License**. See [LICENSE](LICENSE) for more information.
+ 
+---
+ 
+**DevBoard** — Maintained by [@tusharrr0302](https://github.com/tusharrr0302). Happy collaborating! 🚀

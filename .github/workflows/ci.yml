@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  validate:
+    name: Validate Code & Links
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check JavaScript Syntax
+        run: |
+          node -c js/app.js
+          node -c js/storage.js
+          node -c js/tasks.js
+          node -c js/ui.js
+          echo "All JavaScript modules pass syntax verification!"
+
+      - name: Verify Core Files Exist
+        run: |
+          test -f index.html || exit 1
+          test -f style.css || exit 1
+          test -f README.md || exit 1
+          test -f CONTRIBUTING.md || exit 1
+          test -f LICENSE || exit 1
+          test -f CODE_OF_CONDUCT.md || exit 1
+          echo "All essential repository assets verified!"

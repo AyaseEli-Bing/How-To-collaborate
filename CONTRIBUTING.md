@@ -37,15 +37,15 @@ Click the **Fork** button at the top-right of the DevBoard GitHub repository pag
 Open your terminal and clone your fork to your computer:
 
 ```bash
-git clone https://github.com/<your-username>/devboard.git
-cd devboard
+git clone https://github.com/<your-username>/How-To-collaborate.git
+cd How-To-collaborate
 ```
 
 ### 3. Add the Upstream Remote
 Keep your fork synchronized with the original repository by adding an `upstream` remote:
 
 ```bash
-git remote add upstream https://github.com/<original-owner>/devboard.git
+git remote add upstream https://github.com/tusharrr0302/How-To-collaborate.git
 git remote -v
 ```
 
@@ -114,8 +114,8 @@ asdf
 
 Before opening a new issue, please check existing issues to avoid duplicates.
 
-- **Found a bug?** Open an issue using the [Bug Report Template](file:///.github/ISSUE_TEMPLATE/bug_report.md). Include steps to reproduce, expected vs. actual behavior, and browser details.
-- **Have an idea?** Open an issue using the [Feature Request Template](file:///.github/ISSUE_TEMPLATE/feature_request.md). Describe the user problem and the proposed solution.
+- **Found a bug?** Open an issue using the [Bug Report Template](.github/ISSUE_TEMPLATE/bug_report.md). Include steps to reproduce, expected vs. actual behavior, and browser details.
+- **Have an idea?** Open an issue using the [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.md). Describe the user problem and the proposed solution.
 
 ---
 
@@ -132,7 +132,7 @@ git push -u origin feat/my-new-feature
 Navigate to your fork on GitHub. You will see a banner prompting you to **Compare & pull request**.
 
 ### 3. Complete the PR Template
-- Fill in the provided [Pull Request Template](file:///.github/PULL_REQUEST_TEMPLATE.md).
+- Fill in the provided [Pull Request Template](.github/PULL_REQUEST_TEMPLATE.md).
 - Reference the issue number you are solving (e.g., `Closes #12`).
 - Check off items in the contributor checklist.
 - Add screenshots or recordings if you made visual changes.
